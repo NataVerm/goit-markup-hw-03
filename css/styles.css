@@ -1,0 +1,297 @@
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --primary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #757575;
+  --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.6);
+  --secondary-text-color-theme-light: #212121;
+  --accent-color: #2196f3;
+  --primary-logo-color: #000000;
+  --secondary-button-color: #188ce8;
+  --primary-backgraund-color: #f5f4fa;
+  --secondary-backgraund-color: #2f303a;
+}
+body {
+  background: var(--primary-text-color-theme-dark);
+  color: var(--secondary-text-color-theme-light);
+  font-family: var(--primary-font-family);
+  letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ====== START COMPONENTS ======*/
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 92px;
+  color: var(--primary-logo-color);
+}
+.logo-color {
+  color: var(--accent-color);
+}
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* ====== END COMPONENTS ======*/
+/* ====== START HEADER ======*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid #ECECEC;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-list-link {
+  color: var(--secondary-text-color-theme-light);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list-active-page {
+  color: var(--accent-color);
+}
+.contact-mail,
+.contact-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+.nav-list-link:hover,
+.nav-list-link:focus,
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--accent-color);
+}
+/* ====== END HEADER ======*/
+/* ====== START HERO ======*/
+.hero {
+  background-color: var(--secondary-backgraund-color);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-dark);
+}
+.modal-btn {
+  min-width: 216px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-dark);
+  background: var(--accent-color);
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--secondary-button-color);
+}
+/* ====== END HERO ======*/
+/* ====== START FEATURES ======*/
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* ====== END FEATURES ======*/
+/* ====== START TASKS ======*/
+.features-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color-theme-light);
+}
+/* ====== END TASKS ======*/
+/* ====== START TEAM ======*/
+.team {
+  background-color: var(--primary-backgraund-color);
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-list-card {
+/* flex-basis: calc((100%-90px) / 4); */
+margin-left: 30px;
+margin-top: 30px;
+}
+.team-content-wrapper {
+  padding-top: 30px;
+}
+.team-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-list-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--primary-text-color-theme-light);
+}
+/* ====== END TEAM ======*/
+/* ====== START FOOTER ======*/
+.footer {
+  background-color: var(--secondary-backgraund-color);
+}
+.logo-footer {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-text-color-theme-dark);
+}
+.address-list-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color-theme-dark);
+}
+.address-list-address {
+  color: var(--primary-text-color-theme-dark);
+}
+.address-list-link:hover,
+.address-list-link:focus {
+  color: var(--accent-color);
+}
+/* ====== END FOOTER ======*/
+/* ====== START PORTFOLIO HERO ======*/
+.portfolio-filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.portfolio-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-filter-btn {
+  min-width: 67px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  background-color: var(--primary-backgraund-color);
+}
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--accent-color);
+}
+.portfolio-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.portfolio-works-list-item {
+  /* flex-basis: calc((100%-60px) / 3); */
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.portfolio-works-content-wrapper {
+  padding-top: 20px;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+}
+.portfolio-works-list-title {
+  color: var(--secondary-text-color-theme-light);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-works-list-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color-theme-light);
+}
+/* ====== END PORTFOLIO HERO ======*/
