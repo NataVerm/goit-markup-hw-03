@@ -72,6 +72,7 @@ address {
 }
 .section-title {
   margin-bottom: 50px;
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -80,8 +81,8 @@ address {
 /* ====== END COMPONENTS ======*/
 /* ====== START HEADER ======*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
   border: 1px solid #ECECEC;
 }
 .header-container {
@@ -109,6 +110,9 @@ address {
 }
 .nav-list-link {
   color: var(--secondary-text-color-theme-light);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -137,12 +141,13 @@ address {
 /* ====== START HERO ======*/
 .hero {
   background-color: var(--secondary-backgraund-color);
+  text-align: center;
 }
 .main-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
@@ -217,7 +222,7 @@ margin-top: 30px;
   margin-top: -30px;
 }
 .team-list-card {
-/* flex-basis: calc((100%-90px) / 4); */
+flex-basis: calc((100%-90px) / );
 margin-left: 30px;
 margin-top: 30px;
 }
@@ -243,6 +248,9 @@ margin-top: 30px;
 }
 .logo-footer {
   font-family: var(--secondary-font-family);
+  display: block;
+  padding-top: 60px;
+  margin-right: 1240px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -266,6 +274,7 @@ margin-top: 30px;
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  justify-content: center;
 }
 .portfolio-filter-item:not(:last-child) {
   margin-right: 8px;
