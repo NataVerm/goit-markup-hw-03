@@ -82,7 +82,7 @@ address {
 /* ====== END COMPONENTS ======*/
 /* ====== START HEADER ======*/
 .header {
-  border: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 .header-container {
   display: flex;
@@ -145,6 +145,9 @@ address {
   text-align: center;
 }
 .main-title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -172,6 +175,9 @@ address {
 }
 /* ====== END HERO ======*/
 /* ====== START FEATURES ======*/
+.features-title {
+  visibility: hidden;
+}
 .features-section {
   padding-bottom: 0;
 }
@@ -184,6 +190,7 @@ address {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .features-list-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -220,6 +227,7 @@ address {
 }
 .team-content-wrapper {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-list-title {
   margin-bottom: 10px;
@@ -250,6 +258,9 @@ address {
   line-height: 1.19;
   color: var(--primary-text-color-theme-dark);
 }
+.address-list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
 .address-list-link {
   font-size: 14px;
   line-height: 1.71;
@@ -264,6 +275,9 @@ address {
 }
 /* ====== END FOOTER ======*/
 /* ====== START PORTFOLIO HERO ======*/
+.portfolio-title {
+  visibility: hidden;
+}
 .portfolio-filter {
   display: flex;
   align-items: center;
@@ -305,6 +319,7 @@ address {
   border-left: 1px solid var(--secondary-border-color);
 }
 .portfolio-works-list-title {
+  margin-bottom: 4px;
   color: var(--secondary-text-color-theme-light);
   font-weight: 700;
   font-size: 18px;
