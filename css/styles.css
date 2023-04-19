@@ -176,7 +176,9 @@ address {
 /* ====== END HERO ======*/
 /* ====== START FEATURES ======*/
 .features-title {
-  visibility: hidden;
+    visibility: hidden;
+  pointer-events: none;
+  position: absolute;
 }
 .features-section {
   padding-bottom: 0;
@@ -277,6 +279,8 @@ address {
 /* ====== START PORTFOLIO HERO ======*/
 .portfolio-title {
   visibility: hidden;
+  pointer-events: none;
+  position: absolute;
 }
 .portfolio-filter {
   display: flex;
